@@ -372,6 +372,8 @@ h3 {
 
 .card {
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card .role {
@@ -501,8 +503,9 @@ a.hoverline:hover {
 }
 .certification-image img {
   max-width: 100%; /* L'image occupe au maximum toute la largeur de son conteneur */
+  width: 100%;
   height: auto; /* Maintient les proportions */
-  max-height: 200px; /* Fixe une hauteur maximale */
+  max-height: 100%; /* Fixe une hauteur maximale */
   object-fit: contain; /* S'assure que l'image est bien cadrée dans son espace */
   display: block; /* Évite les espaces blancs inattendus */
   margin: 0 auto; /* Centre l'image horizontalement */
@@ -521,6 +524,7 @@ a.hoverline:hover {
 
 .card.large .card-image {
   height: 230px;
+  flex-grow: 1;
 }
 
 .card.large .card-content {
@@ -529,6 +533,7 @@ a.hoverline:hover {
 
 .card.medium .card-image {
   height: 240px;
+  flex-grow: 1;
 }
 
 .card-action a.btn-floating {
