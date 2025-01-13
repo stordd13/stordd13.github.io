@@ -499,6 +499,14 @@ a.hoverline:hover {
   vertical-align: middle;
   display: table-cell;
 }
+.certification-image img {
+  max-width: 100%; /* L'image occupe au maximum toute la largeur de son conteneur */
+  height: auto; /* Maintient les proportions */
+  max-height: 200px; /* Fixe une hauteur maximale */
+  object-fit: contain; /* S'assure que l'image est bien cadrée dans son espace */
+  display: block; /* Évite les espaces blancs inattendus */
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
 
 .card.large .card-content p {
   color: inherit;
@@ -575,10 +583,18 @@ small {
   #experience .container {
     width: 860px;
   }
+  #certification .container {
+    width: 860px;
+  }
 }
 
 @media (max-width: 1360px) {
   .card ul li {
+    font-size: 14px;
+    line-height: 200%;
+    margin-left: 20px;
+  }
+  #certification .card ul li {
     font-size: 14px;
     line-height: 200%;
     margin-left: 20px;
@@ -589,6 +605,10 @@ small {
   .card ul li {
     line-height: 150%;
   }
+    /* Ajout pour #certification */
+  #certification .card ul li {
+      line-height: 150%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -656,6 +676,20 @@ small {
     right: initial;
     top: initial;
   }
+  #certification {
+    padding: 20px 0;
+  }
+
+  #certification .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  #certification .card ul li {
+    font-size: 12px;
+    line-height: 150%;
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -695,5 +729,23 @@ small {
   }
   #intro.section {
     background-position-x: 30%;
+  }
+  #certification {
+    padding: 10px 0;
+  }
+
+  #certification .card ul li {
+    font-size: 10px;
+    line-height: 120%;
+    margin-left: 10px;
+  }
+
+  #certification h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #certification .container {
+    padding: 0 10px;
   }
 }
