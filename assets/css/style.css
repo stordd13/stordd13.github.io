@@ -398,8 +398,12 @@ h3 {
   padding-bottom: 30px;
 }
 .card .card-content2 {
-  padding-bottom: 77px;
+  padding: 24px;  /* Ajoute de l'espace en haut et sur les côtés */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 77px;
 }
 .card .card-content p {
   padding: 5px 0 0;
@@ -458,8 +462,8 @@ h3 {
 .card .card-titlebis {
   font-size: 18px;
   color: black;
-  text-align: center;
-  display: block; 
+  display: block;
+  width: 100%;
 }
 
 .card-title {
