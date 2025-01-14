@@ -397,14 +397,7 @@ h3 {
 .card .card-content {
   padding-bottom: 30px;
 }
-.card .card-content2 {
-  padding: 24px;  /* Ajoute de l'espace en haut et sur les côtés */
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 77px;
-}
+
 .card .card-content p {
   padding: 5px 0 0;
 }
@@ -522,6 +515,30 @@ a.hoverline:hover {
   object-fit: contain; /* S'assure que l'image est bien cadrée dans son espace */
   display: block; /* Évite les espaces blancs inattendus */
   margin: 0 auto; /* Centre l'image horizontalement */
+}
+#certification .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#certification .col.s12.m6.l6 {
+  display: flex;
+}
+
+#certification .card {
+  width: 100%;
+  margin-bottom: 30px; /* Réduit l'espace entre les cartes */
+}
+
+/* Ajuster card-content2 pour qu'elle prenne l'espace restant */
+#certification .card-content2 {
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 77px;
 }
 
 .card.large .card-content p {
