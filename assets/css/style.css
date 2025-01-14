@@ -399,6 +399,7 @@ h3 {
 }
 .card .card-content2 {
   padding-bottom: 77px;
+  text-align: center;
 }
 .card .card-content p {
   padding: 5px 0 0;
@@ -457,6 +458,8 @@ h3 {
 .card .card-titlebis {
   font-size: 18px;
   color: black;
+  text-align: center;
+  display: block; 
 }
 
 .card-title {
