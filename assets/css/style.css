@@ -452,6 +452,10 @@ h3 {
   font-size: 24px;
   color: black;
 }
+.card .card-titlebis {
+  font-size: 18px;
+  color: black;
+}
 
 .card-title {
   color: black;
