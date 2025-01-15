@@ -536,7 +536,10 @@ a.hoverline:hover {
   padding: 0;
 }
 
-
+#certification .container {
+  width: 80%; /* ou une valeur plus petite selon vos préférences */
+  max-width: 800px; /* limite la largeur maximale */
+}
 #certification .row {
   display: flex;
   flex-wrap: wrap;
@@ -550,6 +553,8 @@ a.hoverline:hover {
 
 #certification .col.s12.m6.l6 {
   display: flex;
+  width: 45%; /* au lieu de 50% par défaut */
+  margin: 0 auto; /* pour centrer */
 }
 
 /* #certification .card {
@@ -646,17 +651,13 @@ small {
     width: 860px;
   }
   #certification .container {
-    width: 860px;
+    width: 70%; /* Réduit la largeur pour les grands écrans */
+    max-width: 800px;
   }
 }
 
 @media (max-width: 1360px) {
   .card ul li {
-    font-size: 14px;
-    line-height: 200%;
-    margin-left: 20px;
-  }
-  #certification .card ul li {
     font-size: 14px;
     line-height: 200%;
     margin-left: 20px;
@@ -667,10 +668,6 @@ small {
   .card ul li {
     line-height: 150%;
   }
-    /* Ajout pour #certification */
-  #certification .card ul li {
-      line-height: 150%;
-    }
 }
 
 @media (max-width: 992px) {
@@ -738,19 +735,14 @@ small {
     right: initial;
     top: initial;
   }
-  #certification {
-    padding: 20px 0;
-  }
-
+  /* Modifications pour certification en tablette */
   #certification .container {
+    width: 85%;
     margin: 0 auto;
     padding: 0 15px;
   }
-
-  #certification .card ul li {
-    font-size: 12px;
-    line-height: 150%;
-    margin-left: 15px;
+  #certification .card-image {
+    height: 160px; /* Réduire la hauteur pour les tablettes */
   }
 }
 
@@ -792,22 +784,22 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  /* Modifications pour certification en mobile */
   #certification {
     padding: 10px 0;
   }
-
-  #certification .card ul li {
-    font-size: 10px;
-    line-height: 120%;
-    margin-left: 10px;
-  }
-
-  #certification h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
   #certification .container {
+    width: 95%;
     padding: 0 10px;
+  }
+  #certification .card-image {
+    height: 140px; /* Encore plus petit pour mobile */
+  }
+  #certification .card-content2 {
+    padding: 12px;
+    min-height: 50px;
+  }
+  #certification .card-titlebis {
+    font-size: 16px;
   }
 }
