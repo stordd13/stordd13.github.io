@@ -570,7 +570,7 @@ ul { margin: 0; padding: 0; }
 /* per-project cover palettes */
 .cover.kraken { --c1: #16a34a; --c2: #052e2b; }
 .cover.solana { --c1: #7c3aed; --c2: #0e1230; }
-.cover.energy { --c1: #f59e0b; --c2: #1c1408; }
+.cover.student { --c1: #2563eb; --c2: #0a1730; }
 .cover.kidney { --c1: #0ea5e9; --c2: #071a2b; }
 .cover.zenml  { --c1: #ef5da8; --c2: #240f22; }
 .cover.sql    { --c1: #14b8a1; --c2: #05201d; }
